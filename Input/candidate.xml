@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Candidate-Details xmlns:tns="http://www.example.org/RecruitingCandidate"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:schemaLocation="http://www.example.org/RecruitingCandidate RecruitingCandidate.xsd">
+  <tns:CandidateID>1032</tns:CandidateID>
+  <tns:CandidateName>Marcus Johannsen</tns:CandidateName>
+  <tns:Candidate-Address>
+      <tns:Street>Nørregade</tns:Street>
+      <tns:LaneNo>37</tns:LaneNo>
+      <tns:City>Copenhagen</tns:City>
+      <tns:Pincode>1165</tns:Pincode>
+      <tns:Country>Denmark</tns:Country>
+  </tns:Candidate-Address>
+  <tns:skill>
+      <tns:technology>Sustainable Tech</tns:technology>
+      <tns:technology>Green Computing</tns:technology>
+      <tns:technology>Energy-Efficient Algorithms</tns:technology>
+  </tns:skill>
+  <tns:Annual-Package>890000</tns:Annual-Package>
+</tns:Candidate-Details>
