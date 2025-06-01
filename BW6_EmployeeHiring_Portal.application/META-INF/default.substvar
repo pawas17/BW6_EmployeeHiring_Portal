@@ -82,14 +82,6 @@
 			<isOverride>false</isOverride>
 		</globalVariable>
 		<globalVariable>
-			<name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/LogFilePath</name>
-			<value>D:/TIBCO/Output/BW6_EmployeeHiring_PortalLog.txt</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-		</globalVariable>
-		<globalVariable>
 			<name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/OnContractCandidateType</name>
 			<value>OnContract</value>
 			<deploymentSettable>false</deploymentSettable>
@@ -100,6 +92,30 @@
 		<globalVariable>
 			<name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/OnRollCandidateType</name>
 			<value>OnRoll</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/LogFilePath</name>
+			<value>D:\TIBCO\Output\Logs\BW6_EmployeeHiring_PortalLog.txt</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/Connections/JMSConnection/HiringQueue</name>
+			<value>hiring</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/Connections/JMSConnection/OnContractQueue</name>
+			<value>oncontract</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
