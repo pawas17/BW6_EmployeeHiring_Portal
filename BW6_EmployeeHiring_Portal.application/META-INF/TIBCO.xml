@@ -73,13 +73,6 @@
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/LogFilePath</packaging:name>
-      <packaging:type>xsd:string</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
       <packaging:name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/OnContractCandidateType</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>public</packaging:visibility>
@@ -88,6 +81,27 @@
     </packaging:property>
     <packaging:property>
       <packaging:name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/OnRollCandidateType</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/Connections/JMSConnection/HiringQueue</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/Connections/JMSConnection/OnContractQueue</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/LogFilePath</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>public</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>

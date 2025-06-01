@@ -10,9 +10,11 @@
   <sca:property xmi:id="_-sJcQP44Ee-B3ZmsD7qqWQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_-sJcQf44Ee-B3ZmsD7qqWQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_O-XaIA4qEfCaNIIbo9bhqA" name="/BW6_EmployeeHiring_Portal/InputFilePath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_WVG-MA4qEfCaNIIbo9bhqA" name="/BW6_EmployeeHiring_Portal/LogFilePath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_8edT0A4qEfCaNIIbo9bhqA" name="/BW6_EmployeeHiring_Portal/OnRollCandidateType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_8hINUA4qEfCaNIIbo9bhqA" name="/BW6_EmployeeHiring_Portal/OnContractCandidateType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_q1iVAD3wEfCVW7pXwM94Vw" name="/BW6_EmployeeHiring_Portal/LogFilePath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_FHseYD3qEfCtuLdNK_pthg" name="/BW6_EmployeeHiring_Portal/Connections/JMSConnection/HiringQueue" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_LQgPsD3qEfCtuLdNK_pthg" name="/BW6_EmployeeHiring_Portal/Connections/JMSConnection/OnContractQueue" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_-nAdkP44Ee-B3ZmsD7qqWQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_-nAdkf44Ee-B3ZmsD7qqWQ" processName="bw6_employeehiring_portal.Process"/>
   </sca:component>
