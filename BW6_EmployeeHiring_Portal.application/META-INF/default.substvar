@@ -75,7 +75,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/InputFilePath</name>
-			<value>D:/TIBCO/Input/candidate.xml</value>
+			<value>D:\GitHub\BW6_EmployeeHiring_Portal\Input\candidate.xml</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -115,7 +115,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//BW6_EmployeeHiring_Portal///BW6_EmployeeHiring_Portal/Connections/JMSConnection/OnContractQueue</name>
-			<value>oncontract</value>
+			<value>contract</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
