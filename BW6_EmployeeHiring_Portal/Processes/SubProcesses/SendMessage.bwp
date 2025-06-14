@@ -14,6 +14,7 @@
     xmlns:ns6="http://tns.tibco.com/bw/palette/internal/errorlinkhandler+d5c94c06-0d95-4e19-8bc0-70cd124e6aef"
     xmlns:ns7="http://www.tibco.com/Fault/"
     xmlns:ns8="http://schemas.tibco.com/bw/plugins/basic/6.0/faults"
+    xmlns:ns9="http://tns.tibco.com/bw/palette/internal/errorlinkhandler+c0e6c395-7cf7-4e36-8506-5b1b57b75dd1"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
@@ -762,7 +763,7 @@
     </tibex:Types>
     <tibex:ProcessInfo createdBy="ADMIN"
         createdOn="Sat May 31 11:58:59 IST 2025" description=""
-        modifiedBy="ADMIN" modifiedOn="Sun Jun 01 18:00:32 IST 2025"
+        modifiedBy="ADMIN" modifiedOn="Sat Jun 14 15:06:39 IST 2025"
         modifiers="public" productVersion="6.2.2 V18 2015-07-14"
         scalable="true" singleton="true" stateless="false" type="IT"/>
     <tibex:ProcessTemplateConfigurations/>
@@ -1077,49 +1078,8 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
-                                    x="112"
-                                    xsi:type="notation:Bounds" y="40"/>
-                                    </children>
-                                    <children type="4002">
-                                    <children type="4017">
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <styles
-                                    backgroundColor="16777215"
-                                    gradientEndColor="50431"
-                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
-                                    <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.1"/>
-                                    <layoutConstraint
-                                    x="247"
-                                    xsi:type="notation:Bounds" y="40"/>
+                                    x="184"
+                                    xsi:type="notation:Bounds" y="20"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1221,17 +1181,6 @@
             <element href="//0/@process/@activity/@activity/@links/@children.3"/>
             <bendpoints points="[25, 0, -102, 0]$[103, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.0"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.0"/>
-            <bendpoints points="[25, 6, -167, 0]$[168, 0, -24, -6]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
     </notation:Diagram>
     <bpws:import importType="http://schemas.xmlsoap.org/wsdl/"
         location="../../Service%20Descriptors/SendMessageService.wsdl" namespace="http://xmlns.example.com/20250531115859"/>
@@ -1280,18 +1229,20 @@
         <bpws:variable name="FaultName2" sca-bpel:internal="true" type="xsd:string"/>
         <bpws:variable element="ns0:FaultDetail" name="FaultDetails2" sca-bpel:internal="true"/>
         <bpws:variable element="ns4:WriteActivityInputTextClass"
-            name="ErrorLog-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns4:WriteActivityOutputClass"
-            name="ErrorLog" sca-bpel:internal="true"/>
-        <bpws:variable element="ns4:WriteActivityInputTextClass"
             name="AuditLog1-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns4:WriteActivityOutputClass"
             name="AuditLog1" sca-bpel:internal="true"/>
-        <bpws:variable element="ns8:UndeclaredFault" name="Reply-input" sca-bpel:internal="true"/>
         <bpws:variable name="FaultName3" sca-bpel:internal="true" type="xsd:string"/>
         <bpws:variable element="ns0:FaultDetail" name="FaultDetails3" sca-bpel:internal="true"/>
         <bpws:variable name="FaultName4" sca-bpel:internal="true" type="xsd:string"/>
         <bpws:variable element="ns0:FaultDetail" name="FaultDetails4" sca-bpel:internal="true"/>
+        <bpws:variable name="FaultName5" sca-bpel:internal="true" type="xsd:string"/>
+        <bpws:variable element="ns0:FaultDetail" name="FaultDetails5" sca-bpel:internal="true"/>
+        <bpws:variable element="ns8:UndeclaredFault" name="Reply-input" sca-bpel:internal="true"/>
+        <bpws:variable name="OnContractCandidateType"
+            sca-bpel:hotUpdate="false" sca-bpel:privateProperty="true"
+            sca-bpel:property="yes"
+            tibex:propertySource="/BW6_EmployeeHiring_Portal/OnContractCandidateType" type="xsd:string"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1307,58 +1258,18 @@
                 tibex:faultNameVar="FaultName2" tibex:xpdlId="81b807ab-4c4a-419b-af77-5c85edc267a0">
                 <bpws:scope name="scope1">
                     <bpws:flow name="flow1">
-                        <bpws:links>
-                            <bpws:link name="ErrorLogToReply" tibex:linkType="SUCCESS"/>
-                        </bpws:links>
-                        <bpws:extensionActivity>
-                            <tibex:activityExtension
-                                expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;FaultName2&quot;/>&lt;xsl:template name=&quot;ErrorLog-input&quot; match=&quot;/&quot;>&lt;tns:WriteActivityInputTextClass>&lt;textContent>&lt;xsl:value-of select=&quot;$FaultName2&quot;/>&lt;/textContent>&lt;addLineSeparator>&lt;xsl:value-of select=&quot;true()&quot;/>&lt;/addLineSeparator>&lt;/tns:WriteActivityInputTextClass>&lt;/xsl:template>&lt;/xsl:stylesheet>"
-                                expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
-                                inputVariable="ErrorLog-input"
-                                name="ErrorLog"
-                                outputVariable="ErrorLog"
-                                tibex:xpdlId="c196fe19-f278-470e-aacd-daa2b2a264de" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                                <bpws:sources>
-                                    <bpws:source linkName="ErrorLogToReply"/>
-                                </bpws:sources>
-                                <tibex:inputBindings>
-                                    <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;FaultName2&quot;/>&lt;xsl:template name=&quot;ErrorLog-input&quot; match=&quot;/&quot;>&lt;tns:WriteActivityInputTextClass>&lt;textContent>&lt;xsl:value-of select=&quot;$FaultName2&quot;/>&lt;/textContent>&lt;addLineSeparator>&lt;xsl:value-of select=&quot;true()&quot;/>&lt;/addLineSeparator>&lt;/tns:WriteActivityInputTextClass>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                                </tibex:inputBindings>
-                                <tibex:config>
-                                    <bwext:BWActivity
-                                    activityTypeID="bw.file.write"
-                                    xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
-                                    xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
-                                    xmlns:file="http://ns.tibco.com/bw/palette/file" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                    <attributeBindings
-                                    bindingType="moduleProperty"
-                                    eAttributeName="fileName" processProperty="LogFilePath"/>
-                                    <activityConfig>
-                                    <properties name="config" xsi:type="activityconfig:EMFProperty">
-                                    <type href="http://ns.tibco.com/bw/palette/file#//WriteFile"/>
-                                    <value append="true"
-                                    compressFile="None"
-                                    encoding="text" xsi:type="file:WriteFile"/>
-                                    </properties>
-                                    </activityConfig>
-                                    </bwext:BWActivity>
-                                </tibex:config>
-                            </tibex:activityExtension>
-                        </bpws:extensionActivity>
+                        <bpws:links/>
                         <bpws:reply faultName="UndeclaredFault"
                             name="Reply" operation="operation"
                             partnerLink="Service" portType="ns1:Service"
-                            tibex:xpdlId="961cc7d1-d064-48ef-92f3-f9d7d3bcd59b" variable="Reply-input">
+                            tibex:xpdlId="b84c79c8-6c7e-49b2-8f6c-978671e5f5e9" variable="Reply-input">
                             <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://schemas.tibco.com/bw/plugins/basic/6.0/faults" version="2.0"&gt;&lt;xsl:param name="FaultDetails2"/&gt;&lt;xsl:template name="Reply-input" match="/"&gt;&lt;tns:UndeclaredFault&gt;&lt;tns:message&gt;&lt;xsl:value-of select="$FaultDetails2/StackTrace"/&gt;&lt;/tns:message&gt;&lt;/tns:UndeclaredFault&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                             <tibex:inputBindings>
                                 <tibex:partBinding
                                     expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://schemas.tibco.com/bw/plugins/basic/6.0/faults&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;FaultDetails2&quot;/>&lt;xsl:template name=&quot;Reply-input&quot; match=&quot;/&quot;>&lt;tns:UndeclaredFault>&lt;tns:message>&lt;xsl:value-of select=&quot;$FaultDetails2/StackTrace&quot;/>&lt;/tns:message>&lt;/tns:UndeclaredFault>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                             </tibex:inputBindings>
-                            <bpws:targets>
-                                <bpws:target linkName="ErrorLogToReply"/>
-                            </bpws:targets>
+                            <bpws:correlations/>
                         </bpws:reply>
                     </bpws:flow>
                 </bpws:scope>
@@ -1477,7 +1388,7 @@
             </bpws:extensionActivity>
             <bpws:extensionActivity>
                 <tibex:activityExtension
-                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;AuditLog1-input&quot; match=&quot;/&quot;>&lt;tns:WriteActivityInputTextClass>&lt;textContent>&lt;xsl:value-of select=&quot;concat(&amp;quot;SubProcess: SendMessage execution is started&amp;quot;,&amp;quot; | &amp;quot;,xsd:string(current-dateTime()))&quot;/>&lt;/textContent>&lt;addLineSeparator>&lt;xsl:value-of select=&quot;true()&quot;/>&lt;/addLineSeparator>&lt;/tns:WriteActivityInputTextClass>&lt;/xsl:template>&lt;/xsl:stylesheet>"
+                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;LogFilePath&quot;/>&lt;xsl:template name=&quot;AuditLog1-input&quot; match=&quot;/&quot;>&lt;tns:WriteActivityInputTextClass>&lt;fileName>&lt;xsl:value-of select=&quot;$LogFilePath&quot;/>&lt;/fileName>&lt;textContent>&lt;xsl:value-of select=&quot;concat(&amp;quot;SubProcess: SendMessage execution is started&amp;quot;,&amp;quot; | &amp;quot;,xsd:string(current-dateTime()))&quot;/>&lt;/textContent>&lt;addLineSeparator>&lt;xsl:value-of select=&quot;true()&quot;/>&lt;/addLineSeparator>&lt;/tns:WriteActivityInputTextClass>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                     inputVariable="AuditLog1-input" name="AuditLog1"
                     outputVariable="AuditLog1"
@@ -1490,22 +1401,20 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;AuditLog1-input&quot; match=&quot;/&quot;>&lt;tns:WriteActivityInputTextClass>&lt;textContent>&lt;xsl:value-of select=&quot;concat(&amp;quot;SubProcess: SendMessage execution is started&amp;quot;,&amp;quot; | &amp;quot;,xsd:string(current-dateTime()))&quot;/>&lt;/textContent>&lt;addLineSeparator>&lt;xsl:value-of select=&quot;true()&quot;/>&lt;/addLineSeparator>&lt;/tns:WriteActivityInputTextClass>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;LogFilePath&quot;/>&lt;xsl:template name=&quot;AuditLog1-input&quot; match=&quot;/&quot;>&lt;tns:WriteActivityInputTextClass>&lt;fileName>&lt;xsl:value-of select=&quot;$LogFilePath&quot;/>&lt;/fileName>&lt;textContent>&lt;xsl:value-of select=&quot;concat(&amp;quot;SubProcess: SendMessage execution is started&amp;quot;,&amp;quot; | &amp;quot;,xsd:string(current-dateTime()))&quot;/>&lt;/textContent>&lt;addLineSeparator>&lt;xsl:value-of select=&quot;true()&quot;/>&lt;/addLineSeparator>&lt;/tns:WriteActivityInputTextClass>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity activityTypeID="bw.file.write"
                             xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
                             xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
                             xmlns:file="http://ns.tibco.com/bw/palette/file" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <attributeBindings
-                                bindingType="moduleProperty"
-                                eAttributeName="fileName" processProperty="LogFilePath"/>
                             <activityConfig>
                                 <properties name="config" xsi:type="activityconfig:EMFProperty">
                                     <type href="http://ns.tibco.com/bw/palette/file#//WriteFile"/>
                                     <value append="true"
                                     compressFile="None"
-                                    encoding="text" xsi:type="file:WriteFile"/>
+                                    encoding="text"
+                                    fileName="D:\TIBCO\Outut\Logs\aps.txt" xsi:type="file:WriteFile"/>
                                 </properties>
                             </activityConfig>
                         </bwext:BWActivity>
